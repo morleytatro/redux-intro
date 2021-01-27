@@ -1,21 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
 .container {
   height: 100vh;
   background: var(--bg-color);
+  padding: 50px 200px 0;
 }
 
 .dark {
-  --bg-color: black;
+  --bg-color: #333;
   --btn-background: white;
   --btn-text: black;
+  --text-color: white;
 }
 
 .light {
   --bg-color: white;
   --btn-background: black;
   --btn-text: white;
+  --text-color: #555;
 }
 
 .btn {
+  cursor: pointer;
+  font-size: 1em;
+  padding: 12px 15px;
+  border: 0;
   color: var(--btn-text);
   background: var(--btn-background);
+}
+
+.text {
+  color: var(--text-color);
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
 }
